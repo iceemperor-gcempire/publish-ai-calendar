@@ -29,7 +29,7 @@
     }
 
     header {
-      padding: 56px 7vw 24px;
+      padding: 56px 6vw 24px;
       display: grid;
       gap: 12px;
     }
@@ -62,7 +62,7 @@
     }
 
     main {
-      padding: 0 7vw 72px;
+      padding: 0 6vw 72px;
       display: grid;
       gap: 32px;
     }
@@ -70,7 +70,7 @@
     .ratio-section {
       background: var(--panel);
       border-radius: 22px;
-      padding: 24px;
+      padding: 26px;
       box-shadow: var(--shadow);
       display: grid;
       gap: 18px;
@@ -93,8 +93,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
     }
 
     .card {
@@ -102,10 +102,10 @@
       color: inherit;
       background: #ffffff;
       border-radius: 16px;
-      padding: 16px;
       display: grid;
-      gap: 10px;
+      gap: 0;
       border: 1px solid rgba(15, 21, 35, 0.06);
+      overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -116,21 +116,24 @@
 
     .thumb {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 16px 16px 0 0;
       object-fit: cover;
       aspect-ratio: 4 / 3;
       background: #f0f2f5;
+      display: block;
     }
 
     .card h3 {
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.05rem;
+      padding: 12px 18px 4px;
     }
 
     .card p {
       margin: 0;
       color: var(--muted);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+      padding: 0 18px 18px;
     }
 
     .error {
@@ -141,15 +144,31 @@
       border: 1px solid rgba(154, 47, 31, 0.2);
     }
 
-    @media (max-width: 600px) {
-      header {
-        padding: 44px 6vw 18px;
-      }
-    }
-
     @media (max-width: 720px) {
+      header {
+        padding: 36px 5vw 16px;
+      }
+
+      main {
+        padding: 0 5vw 56px;
+        gap: 22px;
+      }
+
+      .ratio-section {
+        padding: 18px;
+      }
+
       .grid {
         grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .card h3 {
+        padding: 12px 16px 4px;
+      }
+
+      .card p {
+        padding: 0 16px 16px;
       }
     }
 

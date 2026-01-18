@@ -61,38 +61,32 @@
     }
 
     main {
-      padding: 0 7vw 72px;
+      padding: 0 4vw 72px;
       display: grid;
       gap: 24px;
     }
 
     .viewer {
-      background: var(--panel);
-      border-radius: 24px;
-      padding: 24px;
-      box-shadow: var(--shadow);
       display: grid;
-      gap: 18px;
+      gap: 16px;
     }
 
     .image-wrap {
-      background: #f2f4f7;
-      border-radius: 18px;
-      padding: 16px;
       display: grid;
       place-items: center;
     }
 
     .image-wrap img {
-      max-width: 100%;
+      width: min(100%, 1200px);
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(15, 21, 35, 0.15);
+      border-radius: 0;
+      box-shadow: none;
     }
 
     .details {
       display: grid;
       gap: 6px;
+      padding: 0 4px;
     }
 
     .details span {
@@ -165,7 +159,7 @@
       }
 
       titleEl.textContent = `${data.title} · ${current.month}`;
-      metaEl.textContent = `Variant ${current.variant} · ${current.ratio} · ${current.image}`;
+      metaEl.textContent = `Variant ${current.variant} · ${current.ratio}`;
       backLink.href = `list.html?data=${encodeURIComponent(dataUrl)}`;
 
       const ratioItems = items
