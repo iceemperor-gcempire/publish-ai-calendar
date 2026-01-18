@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendar List</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap');
+
+    :root {
+      --ink: #0f1117;
+      --muted: #4b4f5c;
+      --accent: #f08a5d;
+      --accent-2: #2f4858;
+      --panel: rgba(255, 255, 255, 0.92);
+      --shadow: 0 18px 40px rgba(15, 21, 35, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Noto Sans", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(150deg, #f8efe2, #e6edf2 45%, #f4f7fb 100%);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 56px 6vw 24px;
+      display: grid;
+      gap: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 2.6vw, 2.8rem);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button {
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--ink);
+      background: white;
+      border: 1px solid rgba(15, 21, 35, 0.1);
+      font-size: 0.9rem;
+    }
+
+    main {
+      padding: 0 6vw 72px;
+      display: grid;
+      gap: 32px;
+    }
+
+    .ratio-section {
+      background: var(--panel);
+      border-radius: 22px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 18px;
+    }
+
+    .ratio-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .ratio-title span {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      color: var(--accent-2);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      text-decoration: none;
+      color: inherit;
+      background: #ffffff;
+      border-radius: 16px;
+      display: grid;
+      gap: 0;
+      border: 1px solid rgba(15, 21, 35, 0.06);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 30px rgba(15, 21, 35, 0.12);
+    }
+
+    .thumb {
+      width: 100%;
+      border-radius: 16px 16px 0 0;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+      background: #f0f2f5;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      padding: 12px 18px 4px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding: 0 18px 18px;
+    }
+
+    .error {
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #fff4f1;
+      color: #9a2f1f;
+      border: 1px solid rgba(154, 47, 31, 0.2);
+    }
+
+    footer {
+      padding: 24px 6vw 36px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: right;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding: 36px 5vw 16px;
+      }
+
+      main {
+        padding: 0 5vw 56px;
+        gap: 22px;
+      }
+
+      footer {
+        padding: 18px 5vw 30px;
+        text-align: right;
+      }
+
+      .ratio-section {
+        padding: 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .card h3 {
+        padding: 12px 16px 4px;
+      }
+
+      .card p {
+        padding: 0 16px 16px;
+      }
+    }
+
+    @media (min-width: 980px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">Calendar List</h1>
+    <div class="meta" id="page-meta">Loading data…</div>
+    <div class="actions">
+      <a class="button" href="index.html">Back to collections</a>
+    </div>
+  </header>
+
+  <main id="content"></main>
+  <footer>2024 Great Cold Empire</footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const dataUrl = params.get("data");
+    const content = document.getElementById("content");
+    const titleEl = document.getElementById("page-title");
+    const metaEl = document.getElementById("page-meta");
+
+    const ratioLabels = {
+      "43": "4:3",
+      "169": "16:9",
+    };
+
+    const ratioOrder = ["43", "169"];
+
+    const renderError = (message) => {
+      content.innerHTML = "";
+      const error = document.createElement("div");
+      error.className = "error";
+      error.textContent = message;
+      content.appendChild(error);
+      metaEl.textContent = "";
+    };
+
+    const buildCard = (item, dataUrlValue) => {
+      const link = document.createElement("a");
+      link.className = "card";
+      link.href = `viewer.html?data=${encodeURIComponent(dataUrlValue)}&id=${encodeURIComponent(item.id)}`;
+
+      const img = document.createElement("img");
+      img.className = "thumb";
+      img.src = item.image;
+      img.alt = `${item.month} ${item.ratio}`;
+      img.loading = "lazy";
+      img.style.aspectRatio = item.ratio_code === "169" ? "16 / 9" : "4 / 3";
+
+      const title = document.createElement("h3");
+      title.textContent = item.month;
+
+      const meta = document.createElement("p");
+      meta.textContent = `Variant ${item.variant} · ${item.ratio}`;
+
+      link.append(img, title, meta);
+      return link;
+    };
+
+    const render = (data) => {
+      titleEl.textContent = `${data.title} Calendars`;
+      metaEl.textContent = "";
+
+      const grouped = { "43": [], "169": [] };
+      data.items.forEach((item) => {
+        if (grouped[item.ratio_code]) {
+          grouped[item.ratio_code].push(item);
+        }
+      });
+
+      content.innerHTML = "";
+      ratioOrder.forEach((ratioCode) => {
+        const items = grouped[ratioCode];
+        if (!items || items.length === 0) {
+          return;
+        }
+
+        const section = document.createElement("section");
+        section.className = "ratio-section";
+
+        const heading = document.createElement("h2");
+        heading.className = "ratio-title";
+        heading.innerHTML = `${ratioLabels[ratioCode]} <span>code ${ratioCode}</span>`;
+
+        const grid = document.createElement("div");
+        grid.className = "grid";
+
+        items.forEach((item) => grid.appendChild(buildCard(item, dataUrl)));
+
+        section.append(heading, grid);
+        content.appendChild(section);
+      });
+    };
+
+    if (!dataUrl) {
+      renderError("Missing data source. Add ?data=path/to.json to the URL.");
+    } else {
+      fetch(dataUrl)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Failed to load ${dataUrl}`);
+          }
+          return response.json();
+        })
+        .then(render)
+        .catch((error) => renderError(error.message));
+    }
+  </script>
+</body>
+</html>

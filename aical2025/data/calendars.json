@@ -1,0 +1,114 @@
+{
+  "title": "AICAL 2025",
+  "slug": "aical2025",
+  "items": [
+    {
+      "id": "_00001",
+      "month": "2025-01",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00001.jpg"
+    },
+    {
+      "id": "_00002",
+      "month": "2025-02",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00002.jpg"
+    },
+    {
+      "id": "_00003",
+      "month": "2025-03",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00003.jpg"
+    },
+    {
+      "id": "_00004",
+      "month": "2025-04",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00004.jpg"
+    },
+    {
+      "id": "_00005",
+      "month": "2025-05",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00005.jpg"
+    },
+    {
+      "id": "_00006",
+      "month": "2025-06",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00006.jpg"
+    },
+    {
+      "id": "_00007",
+      "month": "2025-07",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00007.jpg"
+    },
+    {
+      "id": "_00008",
+      "month": "2025-08",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00008.jpg"
+    },
+    {
+      "id": "_00009",
+      "month": "2025-09",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00009.jpg"
+    },
+    {
+      "id": "_00010",
+      "month": "2025-10",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00010.jpg"
+    },
+    {
+      "id": "_00011",
+      "month": "2025-11",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00011.jpg"
+    },
+    {
+      "id": "_00012",
+      "month": "2025-12",
+      "brand": "aical",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/_00012.jpg"
+    }
+  ]
+}
