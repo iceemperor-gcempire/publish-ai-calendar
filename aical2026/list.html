@@ -93,8 +93,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .card {
@@ -102,7 +102,7 @@
       color: inherit;
       background: #ffffff;
       border-radius: 16px;
-      padding: 12px;
+      padding: 16px;
       display: grid;
       gap: 10px;
       border: 1px solid rgba(15, 21, 35, 0.06);
@@ -144,6 +144,18 @@
     @media (max-width: 600px) {
       header {
         padding: 44px 6vw 18px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 980px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
       }
     }
   </style>
