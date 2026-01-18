@@ -1,0 +1,276 @@
+{
+  "title": "ICE",
+  "slug": "ice",
+  "items": [
+    {
+      "id": "202601+ice+1+169",
+      "month": "2026-01",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202601+ice+1+169.jpg"
+    },
+    {
+      "id": "202601+ice+1+43",
+      "month": "2026-01",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202601+ice+1+43.jpg"
+    },
+    {
+      "id": "202602+ice+1+169",
+      "month": "2026-02",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202602+ice+1+169.jpg"
+    },
+    {
+      "id": "202602+ice+1+43",
+      "month": "2026-02",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202602+ice+1+43.jpg"
+    },
+    {
+      "id": "202603+ice+1+169",
+      "month": "2026-03",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202603+ice+1+169.jpg"
+    },
+    {
+      "id": "202603+ice+1+43",
+      "month": "2026-03",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202603+ice+1+43.jpg"
+    },
+    {
+      "id": "202604+ice+1+169",
+      "month": "2026-04",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202604+ice+1+169.jpg"
+    },
+    {
+      "id": "202604+ice+1+43",
+      "month": "2026-04",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202604+ice+1+43.jpg"
+    },
+    {
+      "id": "202605+ice+1+169",
+      "month": "2026-05",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202605+ice+1+169.jpg"
+    },
+    {
+      "id": "202605+ice+1+43",
+      "month": "2026-05",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202605+ice+1+43.jpg"
+    },
+    {
+      "id": "202605+ice+2+169",
+      "month": "2026-05",
+      "brand": "ice",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202605+ice+2+169.jpg"
+    },
+    {
+      "id": "202605+ice+2+43",
+      "month": "2026-05",
+      "brand": "ice",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202605+ice+2+43.jpg"
+    },
+    {
+      "id": "202606+ice+1+169",
+      "month": "2026-06",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202606+ice+1+169.jpg"
+    },
+    {
+      "id": "202606+ice+1+43",
+      "month": "2026-06",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202606+ice+1+43.jpg"
+    },
+    {
+      "id": "202607+ice+1+169",
+      "month": "2026-07",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202607+ice+1+169.jpg"
+    },
+    {
+      "id": "202607+ice+1+43",
+      "month": "2026-07",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202607+ice+1+43.jpg"
+    },
+    {
+      "id": "202607+ice+2+169",
+      "month": "2026-07",
+      "brand": "ice",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202607+ice+2+169.jpg"
+    },
+    {
+      "id": "202607+ice+2+43",
+      "month": "2026-07",
+      "brand": "ice",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202607+ice+2+43.jpg"
+    },
+    {
+      "id": "202608+ice+1+169",
+      "month": "2026-08",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202608+ice+1+169.jpg"
+    },
+    {
+      "id": "202608+ice+1+43",
+      "month": "2026-08",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202608+ice+1+43.jpg"
+    },
+    {
+      "id": "202608+ice+2+169",
+      "month": "2026-08",
+      "brand": "ice",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202608+ice+2+169.jpg"
+    },
+    {
+      "id": "202608+ice+2+43",
+      "month": "2026-08",
+      "brand": "ice",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202608+ice+2+43.jpg"
+    },
+    {
+      "id": "202609+ice+1+169",
+      "month": "2026-09",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202609+ice+1+169.jpg"
+    },
+    {
+      "id": "202609+ice+1+43",
+      "month": "2026-09",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202609+ice+1+43.jpg"
+    },
+    {
+      "id": "202610+ice+1+169",
+      "month": "2026-10",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202610+ice+1+169.jpg"
+    },
+    {
+      "id": "202610+ice+1+43",
+      "month": "2026-10",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202610+ice+1+43.jpg"
+    },
+    {
+      "id": "202611+ice+1+169",
+      "month": "2026-11",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202611+ice+1+169.jpg"
+    },
+    {
+      "id": "202611+ice+1+43",
+      "month": "2026-11",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202611+ice+1+43.jpg"
+    },
+    {
+      "id": "202612+ice+1+169",
+      "month": "2026-12",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/ice/202612+ice+1+169.jpg"
+    },
+    {
+      "id": "202612+ice+1+43",
+      "month": "2026-12",
+      "brand": "ice",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/ice/202612+ice+1+43.jpg"
+    }
+  ]
+}

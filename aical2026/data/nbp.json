@@ -1,0 +1,258 @@
+{
+  "title": "NBP",
+  "slug": "nbp",
+  "items": [
+    {
+      "id": "202601+nbp+1+169",
+      "month": "2026-01",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202601+nbp+1+169.jpg"
+    },
+    {
+      "id": "202601+nbp+1+43",
+      "month": "2026-01",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202601+nbp+1+43.jpg"
+    },
+    {
+      "id": "202602+nbp+1+169",
+      "month": "2026-02",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202602+nbp+1+169.jpg"
+    },
+    {
+      "id": "202602+nbp+1+43",
+      "month": "2026-02",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202602+nbp+1+43.jpg"
+    },
+    {
+      "id": "202603+nbp+1+169",
+      "month": "2026-03",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202603+nbp+1+169.jpg"
+    },
+    {
+      "id": "202603+nbp+1+43",
+      "month": "2026-03",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202603+nbp+1+43.jpg"
+    },
+    {
+      "id": "202604+nbp+1+169",
+      "month": "2026-04",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202604+nbp+1+169.jpg"
+    },
+    {
+      "id": "202604+nbp+1+43",
+      "month": "2026-04",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202604+nbp+1+43.jpg"
+    },
+    {
+      "id": "202605+nbp+1+43",
+      "month": "2026-05",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202605+nbp+1+43.jpg"
+    },
+    {
+      "id": "202605+nbp+2+169",
+      "month": "2026-05",
+      "brand": "nbp",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202605+nbp+2+169.jpg"
+    },
+    {
+      "id": "202606+nbp+1+169",
+      "month": "2026-06",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202606+nbp+1+169.jpg"
+    },
+    {
+      "id": "202606+nbp+1+43",
+      "month": "2026-06",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202606+nbp+1+43.jpg"
+    },
+    {
+      "id": "202606+nbp+2+169",
+      "month": "2026-06",
+      "brand": "nbp",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202606+nbp+2+169.jpg"
+    },
+    {
+      "id": "202606+nbp+2+43",
+      "month": "2026-06",
+      "brand": "nbp",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202606+nbp+2+43.jpg"
+    },
+    {
+      "id": "202607+nbp+1+169",
+      "month": "2026-07",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202607+nbp+1+169.jpg"
+    },
+    {
+      "id": "202607+nbp+1+43",
+      "month": "2026-07",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202607+nbp+1+43.jpg"
+    },
+    {
+      "id": "202608+nbp+1+169",
+      "month": "2026-08",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202608+nbp+1+169.jpg"
+    },
+    {
+      "id": "202608+nbp+1+43",
+      "month": "2026-08",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202608+nbp+1+43.jpg"
+    },
+    {
+      "id": "202609+nbp+1+169",
+      "month": "2026-09",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202609+nbp+1+169.jpg"
+    },
+    {
+      "id": "202609+nbp+1+43",
+      "month": "2026-09",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202609+nbp+1+43.jpg"
+    },
+    {
+      "id": "202609+nbp+2+169",
+      "month": "2026-09",
+      "brand": "nbp",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202609+nbp+2+169.jpg"
+    },
+    {
+      "id": "202609+nbp+2+43",
+      "month": "2026-09",
+      "brand": "nbp",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202609+nbp+2+43.jpg"
+    },
+    {
+      "id": "202610+nbp+1+169",
+      "month": "2026-10",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202610+nbp+1+169.jpg"
+    },
+    {
+      "id": "202610+nbp+1+43",
+      "month": "2026-10",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202610+nbp+1+43.jpg"
+    },
+    {
+      "id": "202611+nbp+1+169",
+      "month": "2026-11",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202611+nbp+1+169.jpg"
+    },
+    {
+      "id": "202611+nbp+1+43",
+      "month": "2026-11",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202611+nbp+1+43.jpg"
+    },
+    {
+      "id": "202612+nbp+1+169",
+      "month": "2026-12",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/nbp/202612+nbp+1+169.jpg"
+    },
+    {
+      "id": "202612+nbp+1+43",
+      "month": "2026-12",
+      "brand": "nbp",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/nbp/202612+nbp+1+43.jpg"
+    }
+  ]
+}

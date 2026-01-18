@@ -1,0 +1,258 @@
+{
+  "title": "KAGENG",
+  "slug": "kageng",
+  "items": [
+    {
+      "id": "202601+kageng+1+169",
+      "month": "2026-01",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202601+kageng+1+169.jpg"
+    },
+    {
+      "id": "202601+kageng+1+43",
+      "month": "2026-01",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202601+kageng+1+43.jpg"
+    },
+    {
+      "id": "202602+kageng+1+169",
+      "month": "2026-02",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202602+kageng+1+169.jpg"
+    },
+    {
+      "id": "202602+kageng+1+43",
+      "month": "2026-02",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202602+kageng+1+43.jpg"
+    },
+    {
+      "id": "202603+kageng+1+169",
+      "month": "2026-03",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202603+kageng+1+169.jpg"
+    },
+    {
+      "id": "202603+kageng+1+43",
+      "month": "2026-03",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202603+kageng+1+43.jpg"
+    },
+    {
+      "id": "202603+kageng+2+169",
+      "month": "2026-03",
+      "brand": "kageng",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202603+kageng+2+169.jpg"
+    },
+    {
+      "id": "202603+kageng+2+43",
+      "month": "2026-03",
+      "brand": "kageng",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202603+kageng+2+43.jpg"
+    },
+    {
+      "id": "202604+kageng+1+169",
+      "month": "2026-04",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202604+kageng+1+169.jpg"
+    },
+    {
+      "id": "202604+kageng+1+43",
+      "month": "2026-04",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202604+kageng+1+43.jpg"
+    },
+    {
+      "id": "202605+kageng+1+169",
+      "month": "2026-05",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202605+kageng+1+169.jpg"
+    },
+    {
+      "id": "202605+kageng+1+43",
+      "month": "2026-05",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202605+kageng+1+43.jpg"
+    },
+    {
+      "id": "202606+kageng+1+169",
+      "month": "2026-06",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202606+kageng+1+169.jpg"
+    },
+    {
+      "id": "202606+kageng+1+43",
+      "month": "2026-06",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202606+kageng+1+43.jpg"
+    },
+    {
+      "id": "202607+kageng+1+169",
+      "month": "2026-07",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202607+kageng+1+169.jpg"
+    },
+    {
+      "id": "202607+kageng+1+43",
+      "month": "2026-07",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202607+kageng+1+43.jpg"
+    },
+    {
+      "id": "202608+kageng+1+169",
+      "month": "2026-08",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202608+kageng+1+169.jpg"
+    },
+    {
+      "id": "202608+kageng+1+43",
+      "month": "2026-08",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202608+kageng+1+43.jpg"
+    },
+    {
+      "id": "202609+kageng+1+169",
+      "month": "2026-09",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202609+kageng+1+169.jpg"
+    },
+    {
+      "id": "202609+kageng+1+43",
+      "month": "2026-09",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202609+kageng+1+43.jpg"
+    },
+    {
+      "id": "202610+kageng+1+169",
+      "month": "2026-10",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202610+kageng+1+169.jpg"
+    },
+    {
+      "id": "202610+kageng+1+43",
+      "month": "2026-10",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202610+kageng+1+43.jpg"
+    },
+    {
+      "id": "202611+kageng+1+169",
+      "month": "2026-11",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202611+kageng+1+169.jpg"
+    },
+    {
+      "id": "202611+kageng+1+43",
+      "month": "2026-11",
+      "brand": "kageng",
+      "variant": 1,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202611+kageng+1+43.jpg"
+    },
+    {
+      "id": "202612+kageng+2+169",
+      "month": "2026-12",
+      "brand": "kageng",
+      "variant": 2,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202612+kageng+2+169.jpg"
+    },
+    {
+      "id": "202612+kageng+2+43",
+      "month": "2026-12",
+      "brand": "kageng",
+      "variant": 2,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202612+kageng+2+43.jpg"
+    },
+    {
+      "id": "202612+kageng+3+169",
+      "month": "2026-12",
+      "brand": "kageng",
+      "variant": 3,
+      "ratio_code": "169",
+      "ratio": "16:9",
+      "image": "images/kageng/202612+kageng+3+169.jpg"
+    },
+    {
+      "id": "202612+kageng+3+43",
+      "month": "2026-12",
+      "brand": "kageng",
+      "variant": 3,
+      "ratio_code": "43",
+      "ratio": "4:3",
+      "image": "images/kageng/202612+kageng+3+43.jpg"
+    }
+  ]
+}

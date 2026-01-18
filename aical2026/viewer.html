@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendar Viewer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap');
+
+    :root {
+      --ink: #0f1117;
+      --muted: #4b4f5c;
+      --accent: #2f4858;
+      --panel: rgba(255, 255, 255, 0.94);
+      --shadow: 0 18px 40px rgba(15, 21, 35, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Noto Sans", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top, #f7f1e8 0%, #e4ecf2 55%, #f8fafc 100%);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 50px 7vw 20px;
+      display: grid;
+      gap: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.9rem, 2.5vw, 2.7rem);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button {
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--ink);
+      background: white;
+      border: 1px solid rgba(15, 21, 35, 0.1);
+      font-size: 0.9rem;
+    }
+
+    main {
+      padding: 0 7vw 72px;
+      display: grid;
+      gap: 24px;
+    }
+
+    .viewer {
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 18px;
+    }
+
+    .image-wrap {
+      background: #f2f4f7;
+      border-radius: 18px;
+      padding: 16px;
+      display: grid;
+      place-items: center;
+    }
+
+    .image-wrap img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(15, 21, 35, 0.15);
+    }
+
+    .details {
+      display: grid;
+      gap: 6px;
+    }
+
+    .details span {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .error {
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #fff4f1;
+      color: #9a2f1f;
+      border: 1px solid rgba(154, 47, 31, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">Calendar Viewer</h1>
+    <div class="meta" id="page-meta">Loading image…</div>
+    <div class="actions">
+      <a class="button" id="back-link" href="index.html">Back to list</a>
+    </div>
+  </header>
+
+  <main id="content"></main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const dataUrl = params.get("data");
+    const itemId = params.get("id");
+
+    const content = document.getElementById("content");
+    const titleEl = document.getElementById("page-title");
+    const metaEl = document.getElementById("page-meta");
+    const backLink = document.getElementById("back-link");
+
+    const renderError = (message) => {
+      content.innerHTML = "";
+      const error = document.createElement("div");
+      error.className = "error";
+      error.textContent = message;
+      content.appendChild(error);
+      metaEl.textContent = "";
+    };
+
+    const buildNavLink = (label, dataUrlValue, idValue) => {
+      const link = document.createElement("a");
+      link.className = "button";
+      link.textContent = label;
+      link.href = `viewer.html?data=${encodeURIComponent(dataUrlValue)}&id=${encodeURIComponent(idValue)}`;
+      return link;
+    };
+
+    const render = (data) => {
+      const items = data.items;
+      const current = items.find((item) => item.id === itemId);
+
+      if (!current) {
+        renderError("Calendar not found. Check the id parameter.");
+        return;
+      }
+
+      titleEl.textContent = `${data.title} · ${current.month}`;
+      metaEl.textContent = `Variant ${current.variant} · ${current.ratio} · ${current.image}`;
+      backLink.href = `list.html?data=${encodeURIComponent(dataUrl)}`;
+
+      const ratioItems = items
+        .filter((item) => item.ratio_code === current.ratio_code)
+        .sort((a, b) => {
+          if (a.month !== b.month) {
+            return a.month.localeCompare(b.month);
+          }
+          if (a.variant !== b.variant) {
+            return a.variant - b.variant;
+          }
+          return a.id.localeCompare(b.id);
+        });
+
+      const index = ratioItems.findIndex((item) => item.id === current.id);
+      const prev = ratioItems[index - 1];
+      const next = ratioItems[index + 1];
+
+      const wrapper = document.createElement("section");
+      wrapper.className = "viewer";
+
+      const imageWrap = document.createElement("div");
+      imageWrap.className = "image-wrap";
+
+      const img = document.createElement("img");
+      img.src = current.image;
+      img.alt = `${current.month} ${current.ratio}`;
+
+      imageWrap.appendChild(img);
+
+      const details = document.createElement("div");
+      details.className = "details";
+      const ratioSpan = document.createElement("span");
+      ratioSpan.textContent = `Ratio ${current.ratio} (code ${current.ratio_code})`;
+      const desc = document.createElement("div");
+      desc.textContent = `Month ${current.month} · Variant ${current.variant}`;
+      details.append(ratioSpan, desc);
+
+      const nav = document.createElement("div");
+      nav.className = "nav";
+      if (prev) {
+        nav.appendChild(buildNavLink("Previous", dataUrl, prev.id));
+      }
+      if (next) {
+        nav.appendChild(buildNavLink("Next", dataUrl, next.id));
+      }
+
+      wrapper.append(imageWrap, details, nav);
+      content.innerHTML = "";
+      content.appendChild(wrapper);
+    };
+
+    if (!dataUrl || !itemId) {
+      renderError("Missing parameters. Use ?data=path/to.json&id=item-id.");
+    } else {
+      fetch(dataUrl)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Failed to load ${dataUrl}`);
+          }
+          return response.json();
+        })
+        .then(render)
+        .catch((error) => renderError(error.message));
+    }
+  </script>
+</body>
+</html>

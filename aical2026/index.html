@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AICAL 2026 Calendar Gallery</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap');
+
+    :root {
+      --ink: #111116;
+      --muted: #4b4f5c;
+      --accent: #f08a5d;
+      --accent-2: #2f4858;
+      --panel: rgba(255, 255, 255, 0.9);
+      --shadow: 0 20px 50px rgba(15, 21, 35, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Noto Sans", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top, #fff4e7 0%, #f6f1e7 45%, #e9edf2 100%);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 64px 7vw 32px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 3vw, 3.2rem);
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.6;
+    }
+
+    main {
+      padding: 0 7vw 72px;
+      display: grid;
+      gap: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: grid;
+      gap: 10px;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 60px rgba(15, 21, 35, 0.22);
+    }
+
+    .card span {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.85rem;
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .hint {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 48px 6vw 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AICAL 2026 Calendar Gallery</h1>
+    <p class="lead">Browse each calendar collection by provider. The list view reads a JSON manifest and separates calendars by ratio (4:3 and 16:9).</p>
+  </header>
+  <main>
+    <section class="cards">
+      <a class="card" href="list.html?data=data/kageng.json">
+        <span>Collection</span>
+        <h2>KAGENG</h2>
+        <p>Monthly sets with multiple variants and both aspect ratios.</p>
+      </a>
+      <a class="card" href="list.html?data=data/nbp.json">
+        <span>Collection</span>
+        <h2>NBP</h2>
+        <p>Standard monthly calendars grouped by 4:3 and 16:9.</p>
+      </a>
+      <a class="card" href="list.html?data=data/ice.json">
+        <span>Collection</span>
+        <h2>ICE</h2>
+        <p>ICE series layouts with single and multi-variant months.</p>
+      </a>
+    </section>
+    <p class="hint">Need a custom list? Link directly to <code>list.html?data=...</code> with your JSON file path.</p>
+  </main>
+</body>
+</html>
