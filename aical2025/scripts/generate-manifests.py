@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 IMAGES_DIR = ROOT / "images"
 DATA_DIR = ROOT / "data"
-PATTERN = re.compile(r"^_(\d{5})\.jpg$")
+PATTERN = re.compile(r"^cal2025_(\d{5})\.jpg$")
 
 
 def build_items() -> list[dict]:
@@ -37,7 +37,7 @@ def build_items() -> list[dict]:
 def main() -> None:
     DATA_DIR.mkdir(exist_ok=True)
     data = {
-        "title": "AICAL 2025",
+        "title": "Gen AI Calendar 2025",
         "slug": "aical2025",
         "items": build_items(),
     }
