@@ -93,7 +93,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
       gap: 24px;
     }
 
@@ -239,7 +239,7 @@
 
     const render = (data) => {
       titleEl.textContent = `${data.title} Calendars`;
-      metaEl.textContent = `${data.items.length} images loaded from ${dataUrl}`;
+      metaEl.textContent = "";
 
       const grouped = { "43": [], "169": [] };
       data.items.forEach((item) => {
