@@ -59,6 +59,8 @@
 
     .card {
       background: var(--panel);
+      background-size: cover;
+      background-position: center top;
       border-radius: 20px;
       padding: 22px;
       box-shadow: var(--shadow);
@@ -66,7 +68,19 @@
       color: inherit;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       display: grid;
-      gap: 10px;
+      gap: 8px;
+      align-content: end;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(15, 21, 35, 0.05) 10%, rgba(15, 21, 35, 0.65) 100%);
+      z-index: 0;
     }
 
     .card:hover {
@@ -77,20 +91,19 @@
     .card span {
       font-family: "IBM Plex Mono", monospace;
       font-size: 0.85rem;
-      color: var(--accent-2);
+      color: rgba(255, 255, 255, 0.8);
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      position: relative;
+      z-index: 1;
     }
 
     .card h2 {
       margin: 0;
       font-size: 1.4rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.5;
+      color: #ffffff;
+      position: relative;
+      z-index: 1;
     }
 
     .hint {
@@ -112,20 +125,17 @@
   </header>
   <main>
     <section class="cards">
-      <a class="card" href="list.html?data=data/kageng.json">
+      <a class="card" href="list.html?data=data/kageng.json" style="background-image: url('images/kageng/202601+kageng+1+169.jpg');">
         <span>Collection</span>
         <h2>KAGENG</h2>
-        <p>Monthly sets with multiple variants and both aspect ratios.</p>
       </a>
-      <a class="card" href="list.html?data=data/nbp.json">
+      <a class="card" href="list.html?data=data/nbp.json" style="background-image: url('images/nbp/202601+nbp+1+169.jpg');">
         <span>Collection</span>
         <h2>NBP</h2>
-        <p>Standard monthly calendars grouped by 4:3 and 16:9.</p>
       </a>
-      <a class="card" href="list.html?data=data/ice.json">
+      <a class="card" href="list.html?data=data/ice.json" style="background-image: url('images/ice/202601+ice+1+169.jpg');">
         <span>Collection</span>
         <h2>ICE</h2>
-        <p>ICE series layouts with single and multi-variant months.</p>
       </a>
     </section>
   </main>
