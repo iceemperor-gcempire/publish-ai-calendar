@@ -84,6 +84,10 @@
       gap: 20px;
     }
 
+    .cards.compact {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .card {
       background: var(--panel);
       background-size: cover;
@@ -100,6 +104,15 @@
       position: relative;
       overflow: hidden;
       aspect-ratio: 16 / 9;
+    }
+
+    .cards.compact .card {
+      padding: 18px;
+      aspect-ratio: 4 / 3;
+    }
+
+    .cards.compact .card h3 {
+      font-size: 1.2rem;
     }
 
     .card::before {
@@ -148,6 +161,10 @@
       main {
         padding: 0 6vw 56px;
       }
+
+      .cards.compact {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -161,15 +178,15 @@
       <h2 class="section-title">2026 <span>Collections</span></h2>
       <p class="year-lead">kageng 와 제 그림들을 학습시켜 만든 SDXL LoRA 를 사용하여 만든 달력입니다.<br />AI 에게 그냥 생성하기보다는, 기존에 그렸던 그림들의 모습을 재현해 생성해 보는 것이 목적이었기에, Local SDXL 과 nano banana pro 사이를 여러 차례 오가며 작업을 진행했습니다.<br />비교를 위해서 nano banana pro 만을 사용한 이미지도 같이 만들어 보았습니다.</p>
       <div class="cards">
-        <a class="card" href="aical2026/list.html?data=aical2026/data/kageng.json" style="background-image: url('aical2026/images/kageng/202601+kageng+1+169.jpg');">
+        <a class="card" href="aical2026/list.html?data=data/kageng.json" style="background-image: url('aical2026/images/kageng/202601+kageng+1+169.jpg');">
           <span>Collection</span>
           <h3>KAGENG</h3>
         </a>
-        <a class="card" href="aical2026/list.html?data=aical2026/data/nbp.json" style="background-image: url('aical2026/images/nbp/202601+nbp+1+169.jpg');">
+        <a class="card" href="aical2026/list.html?data=data/nbp.json" style="background-image: url('aical2026/images/nbp/202601+nbp+1+169.jpg');">
           <span>Collection</span>
           <h3>NANO BANANA PRO</h3>
         </a>
-        <a class="card" href="aical2026/list.html?data=aical2026/data/ice.json" style="background-image: url('aical2026/images/ice/202601+ice+1+169.jpg');">
+        <a class="card" href="aical2026/list.html?data=data/ice.json" style="background-image: url('aical2026/images/ice/202601+ice+1+169.jpg');">
           <span>Collection</span>
           <h3>ICEEMPEROR</h3>
         </a>
@@ -177,21 +194,21 @@
     </section>
     <section>
       <h2 class="section-title">2025 <span>Collections</span></h2>
-      <p class="year-lead">A curated set of AI-generated calendar images created during 2025.</p>
-      <div class="cards">
-        <a class="card" href="aical2025/list.html?data=aical2025/data/calendars.json" style="background-image: url('aical2025/images/cal2025_00001.jpg');">
+      <p class="year-lead">chatGPT 이미지 생성 기능이 크게 업데이트 되었던 2025년 4월에 만들어봤던 달력입니다. chatGPT 초기 그림체만 적용되어 있습니다.</p>
+      <div class="cards compact">
+        <a class="card" href="aical2025/list.html?data=data/calendars.json" style="background-image: url('aical2025/images/cal2025_00001.jpg');">
           <span>Collection</span>
-          <h3>AICAL 2025</h3>
+          <h3>2025</h3>
         </a>
       </div>
     </section>
     <section>
       <h2 class="section-title">2024 <span>Collections</span></h2>
-      <p class="year-lead">A curated set of AI-generated calendar images created during 2024.</p>
-      <div class="cards">
-        <a class="card" href="aical2024/list.html?data=aical2024/data/calendars.json" style="background-image: url('aical2024/images/cal2024-1a.jpg');">
+      <p class="year-lead">kageng 와 제 그림들을 학습시켜 만든 SD LoRA 를 사용하여 만든 달력입니다. SDXL LoRA 학습 툴이 제대로 없던 시점이라 SD 가 사용되었습니다.<br />이미지 오류 및 의도대로 나오지 않는 문제로 포토샵 편집 작업이 꽤 들어갔었습니다.</p>
+      <div class="cards compact">
+        <a class="card" href="aical2024/list.html?data=data/calendars.json" style="background-image: url('aical2024/images/cal2024-1a.jpg');">
           <span>Collection</span>
-          <h3>AICAL 2024</h3>
+          <h3>2024</h3>
         </a>
       </div>
     </section>
