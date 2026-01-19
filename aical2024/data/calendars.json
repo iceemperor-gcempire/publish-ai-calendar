@@ -12,15 +12,6 @@
       "image": "images/cal2024-1a.jpg"
     },
     {
-      "id": "cal2024-2a",
-      "month": "2024-02",
-      "brand": "aical",
-      "variant": 1,
-      "ratio_code": "43",
-      "ratio": "4:3",
-      "image": "images/cal2024-2a.jpg"
-    },
-    {
       "id": "cal2024-2b",
       "month": "2024-02",
       "brand": "aical",
@@ -75,15 +66,6 @@
       "image": "images/cal2024-5a.jpg"
     },
     {
-      "id": "cal2024-6a",
-      "month": "2024-06",
-      "brand": "aical",
-      "variant": 1,
-      "ratio_code": "43",
-      "ratio": "4:3",
-      "image": "images/cal2024-6a.jpg"
-    },
-    {
       "id": "cal2024-6b",
       "month": "2024-06",
       "brand": "aical",
@@ -100,15 +82,6 @@
       "ratio_code": "43",
       "ratio": "4:3",
       "image": "images/cal2024-7a.jpg"
-    },
-    {
-      "id": "cal2024-7b",
-      "month": "2024-07",
-      "brand": "aical",
-      "variant": 2,
-      "ratio_code": "43",
-      "ratio": "4:3",
-      "image": "images/cal2024-7b.jpg"
     },
     {
       "id": "cal2024-8a",
@@ -145,15 +118,6 @@
       "ratio_code": "43",
       "ratio": "4:3",
       "image": "images/cal2024-11a.jpg"
-    },
-    {
-      "id": "cal2024-12a",
-      "month": "2024-12",
-      "brand": "aical",
-      "variant": 1,
-      "ratio_code": "43",
-      "ratio": "4:3",
-      "image": "images/cal2024-12a.jpg"
     },
     {
       "id": "cal2024-12b",
